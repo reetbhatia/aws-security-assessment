@@ -1,38 +1,80 @@
-# Cloud Security Vulnerability Assessment
+# ☁️ AWS Cloud Security Assessment
 
 > How secure is an AWS environment when you stop assuming every configuration is correct?
 
 ---
 
-## The Assessment
+A practical cloud security assessment of an AWS-hosted **OWASP Juice Shop** environment, demonstrating how cloud infrastructure and application vulnerabilities can be identified, validated, and remediated through a structured security assessment.
 
-An application can be securely developed and still become vulnerable because of its environment.
+> **Detailed Assessment Report:** [Cloud Security Assessment Report](cloud-security-assessment.md)
 
-Misconfigured IAM permissions, exposed services, weak network boundaries, insufficient data protection, or an incomplete recovery strategy can each increase risk. Looking at one issue in isolation rarely explains the security posture of the environment.
+---
 
-This assessment examines an AWS-hosted OWASP Juice Shop deployment across five areas:
+## Project Overview
 
+This project evaluates the security of an AWS-hosted web application by combining automated vulnerability analysis with manual validation. The assessment examines the application's attack surface, validates exploitable security weaknesses, and provides practical remediation recommendations aligned with industry security frameworks.
+
+The objective was not only to identify vulnerabilities, but also to demonstrate a structured approach to assessing cloud-hosted workloads.
+
+---
+
+## Assessment Scope
+
+The assessment included:
+
+* Amazon EC2
+* AWS Security Groups
+* Amazon EBS
+* OWASP Juice Shop
+* SQLite Database
+* Network Exposure
+* Authentication & Credential Storage
+* Application Dependencies
+
+---
+
+## Key Findings
+
+The assessment validated security weaknesses across multiple layers of the environment, including:
+
+* Vulnerable third-party application dependencies
+* Publicly exposed network services
+* SQL injection leading to administrative access
+* Unauthorized access to sensitive application data
+* Weak password hashing (MD5)
+* Unencrypted Amazon EBS storage
+
+Each finding includes supporting evidence, risk analysis, and recommended remediation.
+
+---
+
+## Tools Used
+
+* AWS Inspector
+* Amazon EC2
+* Amazon EBS
+* AWS Security Groups
+* Nmap
+* SQLite
+* OWASP Juice Shop
+
+---
+
+## Frameworks
+
+* OWASP Top 10 (2021)
+* CIS AWS Foundations Benchmark
+* AWS Security Best Practices
+
+---
+
+## Skills Demonstrated
+
+* Cloud Security Assessment
 * Vulnerability Assessment
-* Virtual Machine Vulnerability Assessment
-* Network Security Assessment
-* Data Security Assessment
-* Disaster Recovery Assessment
-
-Each assessment identifies security weaknesses, evaluates their potential impact, and recommends remediation using **OWASP Top 10**, **CIS Benchmarks**, and **AWS Security Best Practices**.
-The disaster recovery assessment also extends the environment with an enhanced recovery design to improve resilience during infrastructure failures.
-
----
-
-## What You'll Find
-
-| Assessment                               | Focus                                                                        |
-| ---------------------------------------- | ---------------------------------------------------------------------------- |
-| Vulnerability Assessment                 | Cloud configuration, IAM, EC2, and application security                      |
-| Virtual Machine Vulnerability Assessment | Patch management, host configuration, and exposed services                   |
-| Network Security Assessment              | Network exposure, segmentation, Security Groups, and Network ACLs            |
-| Data Security Assessment                 | Encryption, authentication, access controls, and database security           |
-| Disaster Recovery Assessment             | Recovery readiness, backup strategy, and enhanced disaster recovery planning |
-
----
-
-The individual assessment reports include supporting evidence, risk analysis, and remediation recommendations for each security domain.
+* Risk Analysis
+* Network Security
+* Secure Configuration Review
+* Application Security Testing
+* Security Hardening
+* Security Documentation
