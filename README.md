@@ -62,7 +62,7 @@ Each finding includes supporting evidence, risk analysis, and recommended remedi
 
 ## Frameworks
 
-* OWASP Top 10 (2021)
+* OWASP Top 10 
 * CIS AWS Foundations Benchmark
 * AWS Security Best Practices
 
