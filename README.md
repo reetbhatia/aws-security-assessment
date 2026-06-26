@@ -1,80 +1,41 @@
-# ☁️ AWS Cloud Security Assessment
+# ☁️ AWS Security Assessment
 
-> How secure is an AWS environment when you stop assuming every configuration is correct?
+**What happens after you discover critical security weaknesses in a cloud environment?**
 
----
+This project answers that question.
 
-A practical cloud security assessment of an AWS-hosted **OWASP Juice Shop** environment, demonstrating how cloud infrastructure and application vulnerabilities can be identified, validated, and remediated through a structured security assessment.
+I performed a security assessment of an **AWS-hosted OWASP Juice Shop** environment to identify vulnerabilities across the application, infrastructure, network, and data layers. Rather than stopping at remediation, I extended the project by designing a **disaster recovery strategy** focused on improving availability, reducing downtime, and strengthening recovery capabilities.
 
-> **Detailed Assessment Report:** [Cloud Security Assessment Report](cloud-security-assessment.md)
-
----
-
-## Project Overview
-
-This project evaluates the security of an AWS-hosted web application by combining automated vulnerability analysis with manual validation. The assessment examines the application's attack surface, validates exploitable security weaknesses, and provides practical remediation recommendations aligned with industry security frameworks.
-
-The objective was not only to identify vulnerabilities, but also to demonstrate a structured approach to assessing cloud-hosted workloads.
+Together, these reports demonstrate both sides of cloud security: **identifying risk** and **designing resilient solutions**.
 
 ---
 
-## Assessment Scope
+## Explore the Reports
 
-The assessment included:
+📄 **[Cloud Security Assessment](cloud-security-assessment.md)**
+Identifies security weaknesses, validates their impact with supporting evidence, and provides remediation recommendations mapped to the **OWASP Top 10** and **CIS AWS Foundations Benchmark**.
 
-* Amazon EC2
-* AWS Security Groups
-* Amazon EBS
-* OWASP Juice Shop
-* SQLite Database
-* Network Exposure
-* Authentication & Credential Storage
-* Application Dependencies
+📄 **[Disaster Recovery Strategy](disaster-recovery-strategy.md)**
+Builds on the assessment by proposing a resilient AWS architecture featuring Multi-AZ deployments, automated backups, Route 53 failover, and Cross-Region Replication to support **RTO < 15 minutes** and **RPO < 5 minutes**.
 
 ---
 
-## Key Findings
+## Highlights
 
-The assessment validated security weaknesses across multiple layers of the environment, including:
-
-* Vulnerable third-party application dependencies
-* Publicly exposed network services
-* SQL injection leading to administrative access
-* Unauthorized access to sensitive application data
-* Weak password hashing (MD5)
-* Unencrypted Amazon EBS storage
-
-Each finding includes supporting evidence, risk analysis, and recommended remediation.
+* Assessed security across AWS infrastructure, networking, application, and data layers.
+* Validated findings through AWS Inspector, manual testing, and network analysis.
+* Prioritized remediation using industry security frameworks.
+* Designed a multi-region disaster recovery strategy to improve resilience and business continuity.
 
 ---
 
-## Tools Used
+## Technologies
 
-* AWS Inspector
-* Amazon EC2
-* Amazon EBS
-* AWS Security Groups
-* Nmap
-* SQLite
-* OWASP Juice Shop
+**AWS:** EC2, RDS, S3, EBS, AWS Backup, Route 53, Lambda, CloudFormation, CloudWatch, CloudTrail, AWS Config, AWS Inspector
+
+**Security:** OWASP Juice Shop, Nmap, SQLite
+
+**Frameworks:** OWASP Top 10 (2021), CIS AWS Foundations Benchmark, AWS Well-Architected Framework
 
 ---
 
-## Frameworks
-
-* OWASP Top 10 
-* CIS AWS Foundations Benchmark
-* AWS Security Best Practices
-
----
-
-## Skills Demonstrated
-
-* Cloud Security Assessment
-* Vulnerability Assessment
-* Risk Analysis
-* Network Security
-* Secure Configuration Review
-* Application Security Testing
-* Security Hardening
-* Security Documentation
