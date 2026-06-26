@@ -75,9 +75,9 @@ Outdated third-party libraries are frequently targeted because exploit technique
 
 **Figure 1.** AWS Inspector identifying vulnerable application dependencies.
 
-```markdown
+
 ![AWS Inspector Findings](images/01-aws-inspector-findings.png)
-```
+
 
 **Recommendation**
 
@@ -108,15 +108,12 @@ Publicly accessible management and application services increase the likelihood 
 
 **Figure 2.** Nmap scan identifying publicly accessible services.
 
-```markdown
-![Nmap Scan](../images/07-nmap-scan.png)
-```
+![Nmap Scan](images/07-nmap-scan.png)
+
 
 **Figure 3.** AWS Security Group permitting unrestricted inbound access.
 
-```markdown
-![Security Group Rules](../images/08-security-group-rules.png)
-```
+![Security Group Rules](images/08-security-group-rules.png)
 
 **Recommendation**
 
@@ -150,15 +147,11 @@ Authentication bypass significantly reduces the effort required for an attacker 
 
 **Figure 4.** Authentication bypass using SQL injection.
 
-```markdown
-![SQL Injection Login](../images/02-sqli-login.png)
-```
+![SQL Injection Login](images/02-sqli-login.png)
 
 **Figure 5.** Administrative dashboard accessed following successful exploitation.
 
-```markdown
-![Admin Dashboard](../images/03-admin-dashboard.png)
-```
+![Admin Dashboard](images/03-admin-dashboard.png)
 
 **Recommendation**
 
@@ -187,15 +180,11 @@ Unauthorized access to sensitive application data increases the risk of account 
 
 **Figure 6.** User account records retrieved from the SQLite database.
 
-```markdown
-![User Records](../images/04-user-records.png)
-```
+![User Records](images/04-user-records.png)
 
 **Figure 7.** Payment card information retrieved during database inspection.
 
-```markdown
-![Payment Data](../images/05-payment-data.png)
-```
+![Payment Data](images/05-payment-data.png)
 
 **Recommendation**
 
@@ -224,9 +213,7 @@ Weak password hashing significantly reduces the effort required to recover user 
 
 **Figure 8.** MD5 password hashes successfully recovered during validation.
 
-```markdown
-![MD5 Password Crack](../images/06-md5-crack.png)
-```
+![MD5 Password Crack](images/06-md5-crack.png)
 
 **Recommendation**
 
@@ -259,9 +246,7 @@ Unencrypted storage weakens the protection of sensitive application data by leav
 
 **Figure 9.** Amazon EBS volume configured without encryption.
 
-```markdown
-![EBS Encryption](../images/09-ebs-encryption.png)
-```
+![EBS Encryption](images/09-ebs-encryption.png)
 
 **Recommendation**
 
