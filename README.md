@@ -35,7 +35,7 @@ Builds on the assessment by proposing a resilient AWS architecture featuring Mul
 
 **Security:** OWASP Juice Shop, Nmap, SQLite
 
-**Frameworks:** OWASP Top 10 (2021), CIS AWS Foundations Benchmark, AWS Well-Architected Framework
+**Frameworks:** OWASP Top 10, CIS AWS Foundations Benchmark, AWS Well-Architected Framework
 
 ---
 
