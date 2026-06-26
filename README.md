@@ -4,7 +4,7 @@
 
 This project answers that question.
 
-I performed a security assessment of an **AWS-hosted OWASP Juice Shop** environment to identify vulnerabilities across the application, infrastructure, network, and data layers. Rather than stopping at remediation, I extended the project by designing a **disaster recovery strategy** focused on improving availability, reducing downtime, and strengthening recovery capabilities.
+I performed a security assessment of an **AWS-hosted OWASP Juice Shop** environment to identify vulnerabilities across the application, infrastructure, network, and data layers. I extended the project by designing a **disaster recovery strategy** to improve availability, reduce downtime, and strengthen recovery capabilities.
 
 Together, these reports demonstrate both sides of cloud security: **identifying risk** and **designing resilient solutions**.
 
