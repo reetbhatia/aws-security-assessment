@@ -76,7 +76,7 @@ Outdated third-party libraries are frequently targeted because exploit technique
 **Figure 1.** AWS Inspector identifying vulnerable application dependencies.
 
 ```markdown
-![AWS Inspector Findings](../images/01-aws-inspector-findings.png)
+![AWS Inspector Findings](images/01-aws-inspector-findings.png)
 ```
 
 **Recommendation**
